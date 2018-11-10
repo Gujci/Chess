@@ -13,6 +13,18 @@
 		2134E992219731FC0066C23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2134E991219731FC0066C23D /* Assets.xcassets */; };
 		2134E995219731FC0066C23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2134E993219731FC0066C23D /* LaunchScreen.storyboard */; };
 		2134E9A0219731FC0066C23D /* ChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E99F219731FC0066C23D /* ChessTests.swift */; };
+		2134E9B22197323B0066C23D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9AB2197323B0066C23D /* Game.swift */; };
+		2134E9B32197323B0066C23D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9AC2197323B0066C23D /* User.swift */; };
+		2134E9B42197323B0066C23D /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9AD2197323B0066C23D /* Step.swift */; };
+		2134E9B52197323B0066C23D /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9AE2197323B0066C23D /* GameStatus.swift */; };
+		2134E9B62197323B0066C23D /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9AF2197323B0066C23D /* Figure.swift */; };
+		2134E9B72197323B0066C23D /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9B02197323B0066C23D /* Position.swift */; };
+		2134E9B82197323B0066C23D /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9B12197323B0066C23D /* Side.swift */; };
+		2134E9BB219734360066C23D /* RESTAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9BA219734360066C23D /* RESTAPI.framework */; };
+		2134E9BD219734440066C23D /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9BC219734440066C23D /* EventEmitter.framework */; };
+		2134E9C0219735330066C23D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9BF219735330066C23D /* Users.swift */; };
+		2134E9C22197364A0066C23D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9C12197364A0066C23D /* GameKit.framework */; };
+		2134E9C62197381A0066C23D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9C52197381A0066C23D /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		2134E99B219731FC0066C23D /* ChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2134E99F219731FC0066C23D /* ChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessTests.swift; sourceTree = "<group>"; };
 		2134E9A1219731FC0066C23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2134E9AB2197323B0066C23D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		2134E9AC2197323B0066C23D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2134E9AD2197323B0066C23D /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		2134E9AE2197323B0066C23D /* GameStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
+		2134E9AF2197323B0066C23D /* Figure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
+		2134E9B02197323B0066C23D /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		2134E9B12197323B0066C23D /* Side.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
+		2134E9BA219734360066C23D /* RESTAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RESTAPI.framework; path = Carthage/Build/iOS/RESTAPI.framework; sourceTree = "<group>"; };
+		2134E9BC219734440066C23D /* EventEmitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventEmitter.framework; path = Carthage/Build/iOS/EventEmitter.framework; sourceTree = "<group>"; };
+		2134E9BF219735330066C23D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		2134E9C12197364A0066C23D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		2134E9C52197381A0066C23D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2134E9C62197381A0066C23D /* SwiftyJSON.framework in Frameworks */,
+				2134E9C22197364A0066C23D /* GameKit.framework in Frameworks */,
+				2134E9BD219734440066C23D /* EventEmitter.framework in Frameworks */,
+				2134E9BB219734360066C23D /* RESTAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +90,7 @@
 				2134E989219731FA0066C23D /* Chess */,
 				2134E99E219731FC0066C23D /* ChessTests */,
 				2134E988219731FA0066C23D /* Products */,
+				2134E9B9219734360066C23D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +112,8 @@
 				2134E991219731FC0066C23D /* Assets.xcassets */,
 				2134E993219731FC0066C23D /* LaunchScreen.storyboard */,
 				2134E996219731FC0066C23D /* Info.plist */,
+				2134E9BE219734780066C23D /* Repository */,
+				2134E9AA219732030066C23D /* Model */,
 			);
 			path = Chess;
 			sourceTree = "<group>";
@@ -96,6 +127,39 @@
 			path = ChessTests;
 			sourceTree = "<group>";
 		};
+		2134E9AA219732030066C23D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2134E9AF2197323B0066C23D /* Figure.swift */,
+				2134E9AB2197323B0066C23D /* Game.swift */,
+				2134E9AE2197323B0066C23D /* GameStatus.swift */,
+				2134E9B02197323B0066C23D /* Position.swift */,
+				2134E9B12197323B0066C23D /* Side.swift */,
+				2134E9AD2197323B0066C23D /* Step.swift */,
+				2134E9AC2197323B0066C23D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2134E9B9219734360066C23D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2134E9C52197381A0066C23D /* SwiftyJSON.framework */,
+				2134E9C12197364A0066C23D /* GameKit.framework */,
+				2134E9BC219734440066C23D /* EventEmitter.framework */,
+				2134E9BA219734360066C23D /* RESTAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2134E9BE219734780066C23D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2134E9BF219735330066C23D /* Users.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +170,7 @@
 				2134E983219731FA0066C23D /* Sources */,
 				2134E984219731FA0066C23D /* Frameworks */,
 				2134E985219731FA0066C23D /* Resources */,
+				2134E9C4219737350066C23D /* Carthage copy Run Script */,
 			);
 			buildRules = (
 			);
@@ -146,6 +211,11 @@
 				TargetAttributes = {
 					2134E986219731FA0066C23D = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2134E99A219731FC0066C23D = {
 						CreatedOnToolsVersion = 10.1;
@@ -192,12 +262,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2134E9C4219737350066C23D /* Carthage copy Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RESTAPI.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/EventEmitter.framework",
+			);
+			name = "Carthage copy Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2134E983219731FA0066C23D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2134E9B32197323B0066C23D /* User.swift in Sources */,
+				2134E9B52197323B0066C23D /* GameStatus.swift in Sources */,
+				2134E9C0219735330066C23D /* Users.swift in Sources */,
+				2134E9B82197323B0066C23D /* Side.swift in Sources */,
+				2134E9B62197323B0066C23D /* Figure.swift in Sources */,
 				2134E98D219731FA0066C23D /* ViewController.swift in Sources */,
+				2134E9B42197323B0066C23D /* Step.swift in Sources */,
+				2134E9B22197323B0066C23D /* Game.swift in Sources */,
+				2134E9B72197323B0066C23D /* Position.swift in Sources */,
 				2134E98B219731FA0066C23D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +464,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PKRW86A3H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Chess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -380,6 +486,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PKRW86A3H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Chess/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

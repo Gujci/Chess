@@ -1,0 +1,4 @@
+github "Gujci/EventEmitter"
+github "Gujci/RESTAPI" "master"
+
+binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json" == 5.4.0
