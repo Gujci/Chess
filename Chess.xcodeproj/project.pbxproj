@@ -25,6 +25,8 @@
 		2134E9C0219735330066C23D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9BF219735330066C23D /* Users.swift */; };
 		2134E9C22197364A0066C23D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9C12197364A0066C23D /* GameKit.framework */; };
 		2134E9C62197381A0066C23D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9C52197381A0066C23D /* SwiftyJSON.framework */; };
+		2134E9CC21975BC40066C23D /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9CB21975BC40066C23D /* Games.swift */; };
+		2134E9CE21975C6C0066C23D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9CD21975C6C0066C23D /* Server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		2134E9BF219735330066C23D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		2134E9C12197364A0066C23D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		2134E9C52197381A0066C23D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		2134E9CB21975BC40066C23D /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		2134E9CD21975C6C0066C23D /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +159,9 @@
 		2134E9BE219734780066C23D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				2134E9CD21975C6C0066C23D /* Server.swift */,
 				2134E9BF219735330066C23D /* Users.swift */,
+				2134E9CB21975BC40066C23D /* Games.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -295,11 +301,13 @@
 				2134E9B52197323B0066C23D /* GameStatus.swift in Sources */,
 				2134E9C0219735330066C23D /* Users.swift in Sources */,
 				2134E9B82197323B0066C23D /* Side.swift in Sources */,
+				2134E9CC21975BC40066C23D /* Games.swift in Sources */,
 				2134E9B62197323B0066C23D /* Figure.swift in Sources */,
 				2134E98D219731FA0066C23D /* ViewController.swift in Sources */,
 				2134E9B42197323B0066C23D /* Step.swift in Sources */,
 				2134E9B22197323B0066C23D /* Game.swift in Sources */,
 				2134E9B72197323B0066C23D /* Position.swift in Sources */,
+				2134E9CE21975C6C0066C23D /* Server.swift in Sources */,
 				2134E98B219731FA0066C23D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

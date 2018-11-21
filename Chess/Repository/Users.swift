@@ -12,16 +12,17 @@ import SwiftyJSON
 
 public final class Users {
     
-    private lazy var server = API(withBaseUrl: "https://chessbackend20181106023517.azurewebsites.net/api")
-    
-    public func createUser(with data: User, _ done: @escaping (Bool) -> ()) {
-        server.put("/users/\(data._id.uuidString)", data: data) { (err, users: JSON?) in
+    public var current: User?
+        
+    public func create(user: User, _ done: @escaping (Bool) -> ()) {
+        Server.shared.put("/users/\(user._id.uuidString)", data: user) { (err, _: JSON?) in
             done(err == nil)
+            self.current = user
         }
     }
     
     public func getUsers(_ done: @escaping ([User]?) -> ()) {
-        server.get("/users") { (err, users: [User]?) in
+        Server.shared.get("/users") { (err, users: [User]?) in
             guard let users = users else { return }
             done(users)
         }
