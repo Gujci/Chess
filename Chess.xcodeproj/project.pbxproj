@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2134E98B219731FA0066C23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E98A219731FA0066C23D /* AppDelegate.swift */; };
-		2134E98D219731FA0066C23D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E98C219731FA0066C23D /* ViewController.swift */; };
 		2134E990219731FA0066C23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2134E98E219731FA0066C23D /* Main.storyboard */; };
 		2134E992219731FC0066C23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2134E991219731FC0066C23D /* Assets.xcassets */; };
 		2134E995219731FC0066C23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2134E993219731FC0066C23D /* LaunchScreen.storyboard */; };
@@ -22,11 +21,14 @@
 		2134E9B82197323B0066C23D /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9B12197323B0066C23D /* Side.swift */; };
 		2134E9BB219734360066C23D /* RESTAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9BA219734360066C23D /* RESTAPI.framework */; };
 		2134E9BD219734440066C23D /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9BC219734440066C23D /* EventEmitter.framework */; };
-		2134E9C0219735330066C23D /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9BF219735330066C23D /* Users.swift */; };
 		2134E9C22197364A0066C23D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9C12197364A0066C23D /* GameKit.framework */; };
 		2134E9C62197381A0066C23D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2134E9C52197381A0066C23D /* SwiftyJSON.framework */; };
-		2134E9CC21975BC40066C23D /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9CB21975BC40066C23D /* Games.swift */; };
 		2134E9CE21975C6C0066C23D /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E9CD21975C6C0066C23D /* Server.swift */; };
+		21BEC8EC21A9616B0085F8DA /* GameListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8EB21A9616B0085F8DA /* GameListTableViewController.swift */; };
+		21BEC8EE21A968160085F8DA /* UserListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8ED21A968160085F8DA /* UserListTableViewController.swift */; };
+		21BEC8F021A96A570085F8DA /* ReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8EF21A96A570085F8DA /* ReplaceSegue.swift */; };
+		21BEC8F221A96AA30085F8DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8F121A96AA30085F8DA /* LoginViewController.swift */; };
+		21BEC8F421A97E3D0085F8DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8F321A97E3D0085F8DA /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,6 @@
 /* Begin PBXFileReference section */
 		2134E987219731FA0066C23D /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2134E98A219731FA0066C23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2134E98C219731FA0066C23D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2134E98F219731FA0066C23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2134E991219731FC0066C23D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2134E994219731FC0066C23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,11 +60,14 @@
 		2134E9B12197323B0066C23D /* Side.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
 		2134E9BA219734360066C23D /* RESTAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RESTAPI.framework; path = Carthage/Build/iOS/RESTAPI.framework; sourceTree = "<group>"; };
 		2134E9BC219734440066C23D /* EventEmitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventEmitter.framework; path = Carthage/Build/iOS/EventEmitter.framework; sourceTree = "<group>"; };
-		2134E9BF219735330066C23D /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		2134E9C12197364A0066C23D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		2134E9C52197381A0066C23D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		2134E9CB21975BC40066C23D /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
 		2134E9CD21975C6C0066C23D /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		21BEC8EB21A9616B0085F8DA /* GameListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListTableViewController.swift; sourceTree = "<group>"; };
+		21BEC8ED21A968160085F8DA /* UserListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewController.swift; sourceTree = "<group>"; };
+		21BEC8EF21A96A570085F8DA /* ReplaceSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceSegue.swift; sourceTree = "<group>"; };
+		21BEC8F121A96AA30085F8DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		21BEC8F321A97E3D0085F8DA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,14 +114,13 @@
 		2134E989219731FA0066C23D /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				21BEC8F521A981980085F8DA /* Utils */,
+				21BEC8EA21A960A50085F8DA /* UI */,
+				2134E9AA219732030066C23D /* Data */,
 				2134E98A219731FA0066C23D /* AppDelegate.swift */,
-				2134E98C219731FA0066C23D /* ViewController.swift */,
-				2134E98E219731FA0066C23D /* Main.storyboard */,
 				2134E991219731FC0066C23D /* Assets.xcassets */,
 				2134E993219731FC0066C23D /* LaunchScreen.storyboard */,
 				2134E996219731FC0066C23D /* Info.plist */,
-				2134E9BE219734780066C23D /* Repository */,
-				2134E9AA219732030066C23D /* Model */,
 			);
 			path = Chess;
 			sourceTree = "<group>";
@@ -131,9 +134,10 @@
 			path = ChessTests;
 			sourceTree = "<group>";
 		};
-		2134E9AA219732030066C23D /* Model */ = {
+		2134E9AA219732030066C23D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2134E9CD21975C6C0066C23D /* Server.swift */,
 				2134E9AF2197323B0066C23D /* Figure.swift */,
 				2134E9AB2197323B0066C23D /* Game.swift */,
 				2134E9AE2197323B0066C23D /* GameStatus.swift */,
@@ -142,7 +146,7 @@
 				2134E9AD2197323B0066C23D /* Step.swift */,
 				2134E9AC2197323B0066C23D /* User.swift */,
 			);
-			path = Model;
+			path = Data;
 			sourceTree = "<group>";
 		};
 		2134E9B9219734360066C23D /* Frameworks */ = {
@@ -156,14 +160,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2134E9BE219734780066C23D /* Repository */ = {
+		21BEC8EA21A960A50085F8DA /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				2134E9CD21975C6C0066C23D /* Server.swift */,
-				2134E9BF219735330066C23D /* Users.swift */,
-				2134E9CB21975BC40066C23D /* Games.swift */,
+				2134E98E219731FA0066C23D /* Main.storyboard */,
+				21BEC8F121A96AA30085F8DA /* LoginViewController.swift */,
+				21BEC8EB21A9616B0085F8DA /* GameListTableViewController.swift */,
+				21BEC8ED21A968160085F8DA /* UserListTableViewController.swift */,
 			);
-			path = Repository;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		21BEC8F521A981980085F8DA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21BEC8F321A97E3D0085F8DA /* Utils.swift */,
+				21BEC8EF21A96A570085F8DA /* ReplaceSegue.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,16 +313,18 @@
 			files = (
 				2134E9B32197323B0066C23D /* User.swift in Sources */,
 				2134E9B52197323B0066C23D /* GameStatus.swift in Sources */,
-				2134E9C0219735330066C23D /* Users.swift in Sources */,
+				21BEC8F221A96AA30085F8DA /* LoginViewController.swift in Sources */,
+				21BEC8F421A97E3D0085F8DA /* Utils.swift in Sources */,
 				2134E9B82197323B0066C23D /* Side.swift in Sources */,
-				2134E9CC21975BC40066C23D /* Games.swift in Sources */,
 				2134E9B62197323B0066C23D /* Figure.swift in Sources */,
-				2134E98D219731FA0066C23D /* ViewController.swift in Sources */,
 				2134E9B42197323B0066C23D /* Step.swift in Sources */,
 				2134E9B22197323B0066C23D /* Game.swift in Sources */,
 				2134E9B72197323B0066C23D /* Position.swift in Sources */,
 				2134E9CE21975C6C0066C23D /* Server.swift in Sources */,
+				21BEC8F021A96A570085F8DA /* ReplaceSegue.swift in Sources */,
 				2134E98B219731FA0066C23D /* AppDelegate.swift in Sources */,
+				21BEC8EE21A968160085F8DA /* UserListTableViewController.swift in Sources */,
+				21BEC8EC21A9616B0085F8DA /* GameListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PKRW86A3H;
+				DEVELOPMENT_TEAM = 3L5DK3V8C3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -493,7 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3PKRW86A3H;
+				DEVELOPMENT_TEAM = 3L5DK3V8C3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

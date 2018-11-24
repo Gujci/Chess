@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +17,98 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CbR-lH-qZq">
+                                <rect key="frame" x="21.5" y="269.5" width="332" height="128"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kRI-9B-QQi">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="king_dark" translatesAutoresizingMaskIntoConstraints="NO" id="YSb-FO-F6i">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="hGi-D8-C7k"/>
+                                                    <constraint firstAttribute="height" constant="60" id="sjD-aU-0Fl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="queen_dark" translatesAutoresizingMaskIntoConstraints="NO" id="Ifu-hf-AdM">
+                                                <rect key="frame" x="68" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="U4f-Il-mFE"/>
+                                                    <constraint firstAttribute="height" constant="60" id="eZd-ZE-eMH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bishop_dark" translatesAutoresizingMaskIntoConstraints="NO" id="yte-y2-FIz">
+                                                <rect key="frame" x="136" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="CLt-2X-l4F"/>
+                                                    <constraint firstAttribute="height" constant="60" id="iuS-aE-pXG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rook_dark" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-G7-mdB">
+                                                <rect key="frame" x="204" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="1Ei-WK-Ev1"/>
+                                                    <constraint firstAttribute="height" constant="60" id="JES-Jp-6U2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="knight_dark" translatesAutoresizingMaskIntoConstraints="NO" id="mlD-nr-6ZH">
+                                                <rect key="frame" x="272" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="cke-ry-jj2"/>
+                                                    <constraint firstAttribute="height" constant="60" id="hpb-If-V9R"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cyI-xE-fxi">
+                                        <rect key="frame" x="0.0" y="68" width="332" height="60"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="king_light" translatesAutoresizingMaskIntoConstraints="NO" id="ATB-X7-7pX">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="ZD1-N8-UN0"/>
+                                                    <constraint firstAttribute="height" constant="60" id="hHl-lE-4G6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="queen_light" translatesAutoresizingMaskIntoConstraints="NO" id="C2K-Xh-5Ic">
+                                                <rect key="frame" x="68" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="2Nx-8s-ds2"/>
+                                                    <constraint firstAttribute="height" constant="60" id="U2h-f8-1yk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bishop_light" translatesAutoresizingMaskIntoConstraints="NO" id="8js-Ly-Nec">
+                                                <rect key="frame" x="136" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="a51-cd-gWg"/>
+                                                    <constraint firstAttribute="width" constant="60" id="lXb-TN-GWI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rook_light" translatesAutoresizingMaskIntoConstraints="NO" id="7CV-Yc-1y2">
+                                                <rect key="frame" x="204" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="L8b-Ty-iDY"/>
+                                                    <constraint firstAttribute="width" constant="60" id="LXC-X3-mpY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="knight_light" translatesAutoresizingMaskIntoConstraints="NO" id="Yq0-hS-KXq">
+                                                <rect key="frame" x="272" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="lO1-ff-pdO"/>
+                                                    <constraint firstAttribute="width" constant="60" id="yWO-qm-41F"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CbR-lH-qZq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lpD-n3-nhw"/>
+                            <constraint firstItem="CbR-lH-qZq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rYp-gA-tAY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +117,16 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bishop_dark" width="48" height="48"/>
+        <image name="bishop_light" width="48" height="48"/>
+        <image name="king_dark" width="48" height="48"/>
+        <image name="king_light" width="48" height="48"/>
+        <image name="knight_dark" width="48" height="48"/>
+        <image name="knight_light" width="48" height="48"/>
+        <image name="queen_dark" width="48" height="48"/>
+        <image name="queen_light" width="48" height="48"/>
+        <image name="rook_dark" width="48" height="48"/>
+        <image name="rook_light" width="48" height="48"/>
+    </resources>
 </document>

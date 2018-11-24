@@ -5,7 +5,6 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
-import Foundation
 import RESTAPI
 
 public struct Game: Codable {
@@ -40,3 +39,21 @@ extension Game: ValidJSONData { }
 
 extension Game: JSONCodable { }
 
+public extension Game {
+    
+    public static var allRelated: [Game] = []
+    
+    public static func getRelated(to user: User,_ done: @escaping ([Game]?) -> ()) {
+        Server.shared.get("/games", query: ["participant": user._id.uuidString]) { (status, games: [Game]?) in
+            guard let games = games else { return }
+            allRelated = games
+            done(games)
+        }
+    }
+    
+    public static func create(game: Game, _ done: @escaping (Bool) -> ()) {
+        Server.shared.post("/games", data: game) { (status, _: JSON?) in
+            done(status.isSuccess)
+        }
+    }
+}

@@ -1,4 +1,4 @@
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseMessagingBinary.json" "5.4.0"
 github "Gujci/EventEmitter" "0.7.0"
-github "Gujci/RESTAPI" "0fd6bafff101ae90fe73253508418194c3b2fb97"
+github "Gujci/RESTAPI" "89971e96bc9386acf8a5cd735d0e384c510b1ce6"
 github "SwiftyJSON/SwiftyJSON" "4.2.0"

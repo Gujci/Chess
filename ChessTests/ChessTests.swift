@@ -11,15 +11,12 @@ import XCTest
 
 class ChessTests: XCTestCase {
     
-    lazy var userRepo: Users = Users()
-    lazy var gameRepo: Games = Games()
-    
     var otherUser: User?
     var ongoingGame: Game?
     
     func testCreateUser() {
         wrap("login") { success in
-            userRepo.create(user: User(_id: UUID(), name: "Test")) { loginSuccess in
+            User.create(user: User(_id: UUID(), name: "Test")) { loginSuccess in
                 XCTAssertTrue(loginSuccess)
                 success()
             }
@@ -28,7 +25,7 @@ class ChessTests: XCTestCase {
 
     func testLoadUsers() {
         wrap("users") { success in
-            userRepo.getUsers { users in
+            User.getAll { users in
                 XCTAssertNotEqual(users?.count, 0)
                 self.otherUser = users?.first
                 success()
@@ -39,8 +36,8 @@ class ChessTests: XCTestCase {
     func testCreateGame() {
         wrap("createGame") { success in
             guard let other = otherUser else { return }
-            guard let newGame = userRepo.current?.invite(other, as: .light) else { return }
-            gameRepo.create(game: newGame) { created in
+            guard let newGame = User.current?.invite(other, as: .light) else { return }
+            Game.create(game: newGame) { created in
                 guard created else { return }
                 success()
             }
@@ -48,8 +45,9 @@ class ChessTests: XCTestCase {
     }
     
     func testLoadGames() {
+        guard let current = User.current else { return }
         wrap("games") { success in
-            gameRepo.getGames { games in
+            Game.getRelated(to: current) { games in
                 XCTAssertNotEqual(games?.count, 0)
                 self.ongoingGame = games?.last
                 success()
