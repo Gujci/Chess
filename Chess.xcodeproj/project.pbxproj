@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210FB0DB21A9C14C00DE0DAB /* GameTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FB0DA21A9C14C00DE0DAB /* GameTileView.swift */; };
 		2134E98B219731FA0066C23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2134E98A219731FA0066C23D /* AppDelegate.swift */; };
 		2134E990219731FA0066C23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2134E98E219731FA0066C23D /* Main.storyboard */; };
 		2134E992219731FC0066C23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2134E991219731FC0066C23D /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210FB0DA21A9C14C00DE0DAB /* GameTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTileView.swift; sourceTree = "<group>"; };
 		2134E987219731FA0066C23D /* Chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2134E98A219731FA0066C23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2134E98F219731FA0066C23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				21BEC8EB21A9616B0085F8DA /* GameListTableViewController.swift */,
 				21BEC8ED21A968160085F8DA /* UserListTableViewController.swift */,
 				21BEC8F621A992860085F8DA /* GameViewController.swift */,
+				210FB0DA21A9C14C00DE0DAB /* GameTileView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				210FB0DB21A9C14C00DE0DAB /* GameTileView.swift in Sources */,
 				2134E9B32197323B0066C23D /* User.swift in Sources */,
 				2134E9B52197323B0066C23D /* GameStatus.swift in Sources */,
 				21BEC8F221A96AA30085F8DA /* LoginViewController.swift in Sources */,

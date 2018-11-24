@@ -6,7 +6,6 @@
 //  Copyright © 2018. gujci. All rights reserved.
 //
 
-import Foundation
 import RESTAPI
 
 public final class Server {

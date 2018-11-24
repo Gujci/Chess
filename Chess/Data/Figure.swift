@@ -5,7 +5,6 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
-import Foundation
 import RESTAPI
 
 public struct Figure: Codable {
@@ -21,9 +20,12 @@ public struct Figure: Codable {
     
     public var kind: Kind?
     public var side: Side?
-    public init(kind: Kind?, side: Side?) { 
+    public var number: Int?
+    
+    public init(kind: Kind?, side: Side?, number: Int?) {
         self.kind = kind
         self.side = side
+        self.number = number
     }
 }
 

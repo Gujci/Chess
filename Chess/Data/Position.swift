@@ -5,7 +5,6 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
-import Foundation
 import RESTAPI
 
 public struct Position: Codable {

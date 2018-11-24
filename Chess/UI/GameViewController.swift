@@ -12,7 +12,7 @@ class GameViewController: UIViewController {
     
     var onGoingGame: Game!
     
-    @IBOutlet var tiles: [UIButton]!
+    @IBOutlet var tiles: [GameTileView]!
 
     override func viewDidLoad() {
         super.viewDidLoad()

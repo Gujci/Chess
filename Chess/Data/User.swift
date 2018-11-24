@@ -5,7 +5,6 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
-import Foundation
 import RESTAPI
 
 public struct User: Codable {
@@ -64,6 +63,6 @@ public extension User {
 public extension User {
     
     func invite(_ other: User, as side: Side = .light) -> Game {
-        return Game(_id: UUID(), owner: self, ownerSide: side, guest: other, steps: nil, status: .pending)
+        return Game(_id: UUID(), owner: self, ownerSide: side, guest: other, steps: Step.initials, status: .pending)
     }
 }

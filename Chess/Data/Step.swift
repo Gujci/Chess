@@ -5,7 +5,6 @@
 // https://github.com/swagger-api/swagger-codegen
 //
 
-import Foundation
 import RESTAPI
 
 public struct Step: Codable {
@@ -22,3 +21,45 @@ public struct Step: Codable {
 extension Step: ValidJSONData { }
 
 extension Step: JSONCodable { }
+
+extension Step {
+    
+    static var initials: [Step] {
+        return [
+            // light
+            Step(position: Position(col: .a, row: 0), figure: Figure(kind: .rook, side: .light, number: 1)),
+            Step(position: Position(col: .b, row: 0), figure: Figure(kind: .knight, side: .light, number: 1)),
+            Step(position: Position(col: .c, row: 0), figure: Figure(kind: .bishop, side: .light, number: 1)),
+            Step(position: Position(col: .d, row: 0), figure: Figure(kind: .king, side: .light, number: 1)),
+            Step(position: Position(col: .e, row: 0), figure: Figure(kind: .queen, side: .light, number: 1)),
+            Step(position: Position(col: .f, row: 0), figure: Figure(kind: .bishop, side: .light, number: 2)),
+            Step(position: Position(col: .g, row: 0), figure: Figure(kind: .knight, side: .light, number: 2)),
+            Step(position: Position(col: .h, row: 0), figure: Figure(kind: .rook, side: .light, number: 2)),
+            Step(position: Position(col: .a, row: 1), figure: Figure(kind: .pawn, side: .light, number: 1)),
+            Step(position: Position(col: .b, row: 1), figure: Figure(kind: .pawn, side: .light, number: 2)),
+            Step(position: Position(col: .c, row: 1), figure: Figure(kind: .pawn, side: .light, number: 3)),
+            Step(position: Position(col: .d, row: 1), figure: Figure(kind: .pawn, side: .light, number: 4)),
+            Step(position: Position(col: .e, row: 1), figure: Figure(kind: .pawn, side: .light, number: 5)),
+            Step(position: Position(col: .f, row: 1), figure: Figure(kind: .pawn, side: .light, number: 6)),
+            Step(position: Position(col: .g, row: 1), figure: Figure(kind: .pawn, side: .light, number: 7)),
+            Step(position: Position(col: .h, row: 1), figure: Figure(kind: .pawn, side: .light, number: 8)),
+            // dark
+            Step(position: Position(col: .a, row: 7), figure: Figure(kind: .rook, side: .dark, number: 1)),
+            Step(position: Position(col: .b, row: 7), figure: Figure(kind: .knight, side: .dark, number: 1)),
+            Step(position: Position(col: .c, row: 7), figure: Figure(kind: .bishop, side: .dark, number: 1)),
+            Step(position: Position(col: .d, row: 7), figure: Figure(kind: .queen, side: .dark, number: 1)),
+            Step(position: Position(col: .e, row: 7), figure: Figure(kind: .king, side: .dark, number: 1)),
+            Step(position: Position(col: .f, row: 7), figure: Figure(kind: .bishop, side: .dark, number: 2)),
+            Step(position: Position(col: .g, row: 7), figure: Figure(kind: .knight, side: .dark, number: 2)),
+            Step(position: Position(col: .h, row: 7), figure: Figure(kind: .rook, side: .dark, number: 2)),
+            Step(position: Position(col: .a, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 1)),
+            Step(position: Position(col: .b, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 2)),
+            Step(position: Position(col: .c, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 3)),
+            Step(position: Position(col: .d, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 4)),
+            Step(position: Position(col: .e, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 5)),
+            Step(position: Position(col: .f, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 6)),
+            Step(position: Position(col: .g, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 7)),
+            Step(position: Position(col: .h, row: 6), figure: Figure(kind: .pawn, side: .dark, number: 8))
+        ]
+    }
+}
