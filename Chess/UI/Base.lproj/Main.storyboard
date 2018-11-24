@@ -122,6 +122,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="R9N-HM-OAK"/>
                                                                     <constraint firstAttribute="height" constant="64" id="XLY-Y0-If1"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="gwW-GT-jyo"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1x-gV-JiJ" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
@@ -130,6 +133,9 @@
                                                                     <constraint firstAttribute="height" constant="64" id="RhU-kM-ysV"/>
                                                                     <constraint firstAttribute="width" constant="64" id="zui-rL-M1k"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="7Mv-3k-FFN"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEh-jK-RPQ" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
@@ -138,6 +144,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="NaA-te-HtK"/>
                                                                     <constraint firstAttribute="height" constant="64" id="Y2b-ei-QU5"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="ELR-I7-NAI"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBl-UU-i7v" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
@@ -146,6 +155,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="QIF-Da-56I"/>
                                                                     <constraint firstAttribute="height" constant="64" id="qnL-22-JDn"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="oTi-UK-xfr"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLs-Pl-MRh" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
@@ -154,6 +166,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="mdr-vu-btY"/>
                                                                     <constraint firstAttribute="height" constant="64" id="s2A-Lx-Lbp"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Hrl-PG-5El"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4GI-w3-T9O" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
@@ -162,6 +177,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="oFf-Uh-a0Z"/>
                                                                     <constraint firstAttribute="height" constant="64" id="zKS-SD-el2"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="yX8-6U-Hse"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -175,6 +193,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="GSa-Cf-XqA"/>
                                                                     <constraint firstAttribute="height" constant="64" id="p93-QC-Xwz"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="0jM-yk-xsz"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Yu-cg-ddW" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
@@ -183,6 +204,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="kEm-IC-BsD"/>
                                                                     <constraint firstAttribute="height" constant="64" id="pMF-2B-rz2"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="YeQ-jE-eJF"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-a4-h83" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
@@ -191,6 +215,9 @@
                                                                     <constraint firstAttribute="height" constant="64" id="A2N-VT-y86"/>
                                                                     <constraint firstAttribute="width" constant="64" id="ha4-OU-QTz"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="jGy-7j-rWX"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTf-Jd-L7n" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
@@ -199,6 +226,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="0yY-Va-kmQ"/>
                                                                     <constraint firstAttribute="height" constant="64" id="e5T-i4-ad4"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Eo6-Lk-Me7"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j71-se-HN2" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
@@ -207,6 +237,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="5I4-J4-u3K"/>
                                                                     <constraint firstAttribute="height" constant="64" id="kNg-fl-grN"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="7rJ-QX-Qkj"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-9s-pUM" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
@@ -215,6 +248,9 @@
                                                                     <constraint firstAttribute="width" constant="64" id="4Pe-wa-A02"/>
                                                                     <constraint firstAttribute="height" constant="64" id="obC-1i-4fD"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="quX-S1-hFy"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvi-eW-KGl" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
@@ -223,6 +259,9 @@
                                                                     <constraint firstAttribute="height" constant="64" id="Nik-uH-eX1"/>
                                                                     <constraint firstAttribute="width" constant="64" id="Nyb-0b-qNz"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="9jI-OL-JGt"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXP-BV-8lT" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
@@ -231,420 +270,567 @@
                                                                     <constraint firstAttribute="width" constant="64" id="Ruv-XT-SOC"/>
                                                                     <constraint firstAttribute="height" constant="64" id="tU9-gq-t5c"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="eGN-NW-GM0"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKm-d4-hXe">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwf-1d-gbg">
                                                         <rect key="frame" x="0.0" y="128" width="512" height="64"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW9-22-iLl" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSa-0Y-zYv" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="M1V-n2-WGM"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="jOw-KY-Hlv"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="VCF-d8-0Hs"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="thf-cs-0NL"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="dmU-s4-cnk"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-XQ-Xae" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXd-LU-Acf" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="Gyr-qh-5bc"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="is6-3z-9JM"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="O0u-gk-GOH"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="fX1-xn-h8k"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="MAb-tn-mSZ"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZF8-8f-Bnp" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pw-WU-fdU" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="aIe-Yr-9Yf"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="ehF-rE-P6R"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="QG0-49-6om"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="k7y-ZC-j8x"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="94k-CB-ozs"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4c-Dr-e6N" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEc-mY-SeV" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="PZD-JA-9Pf"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="v4B-bN-ieT"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="7NP-G7-onR"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="MOz-Tg-rtE"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="oBP-uh-1z8"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiQ-lk-gb1" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXa-Nc-BVY" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="L3L-rh-ElT"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="XGm-l5-W4U"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="QjS-of-kHc"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="tJ4-8k-bev"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="dJF-Wb-5TB"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbt-Ol-WOX" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-49-Cpc" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="dqH-7i-EBZ"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="gan-wv-og9"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="QIX-ka-DWC"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="mkr-GG-sGv"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="RZl-pe-aNc"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeI-FP-r9X" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9r-GT-maa" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="SoQ-JC-vDT"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="hD8-WR-nRL"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="OqN-Y3-m22"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="b38-p4-iwB"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="evk-pI-Bv8"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gce-Zz-Pzc" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-tL-rpH" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="6NZ-Ip-bGa"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="SyQ-Q3-gnB"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="MYc-hK-cuh"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="rxT-H9-z9u"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="nla-0r-eu1"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5J-CD-9se">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSr-a7-lNA">
                                                         <rect key="frame" x="0.0" y="192" width="512" height="64"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-9g-d2J" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMF-aS-ulV" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="5zm-oA-MBW"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="tAj-kK-92c"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="BKf-vA-Y26"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="IY1-g8-vmR"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="fEz-hO-4GW"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZ3-nY-m0N" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gM-Hn-0hP" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="P2c-NP-vlM"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="QeC-82-JuV"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="ToW-kt-aGN"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="mgQ-W5-5qQ"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Vcx-pC-P71"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIM-7h-s5G" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-m3-VQz" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="2xd-Ke-Mdh"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="E69-Bb-dUs"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="45Z-AR-uJR"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="I9q-2o-ahr"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="mbY-4g-URx"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SA-w9-VSW" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lA-RC-TWI" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="R42-zc-Zf5"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="cGu-9d-Czu"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="FLu-4S-zf8"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="I4V-8u-lxg"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="bJY-hq-H1x"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F63-6l-dkT" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C22-MS-PqV" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="JQd-5N-YW2"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="aU2-oa-QGj"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="XDz-ES-djc"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="lrH-9K-aHb"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="GI6-gu-ywg"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BW7-cF-mKW" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncO-nP-pA8" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="3OA-fR-G6e"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="CDW-Eq-3Hg"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="1bD-Vo-hJN"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="GjU-wD-rLV"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="VeI-TC-WzC"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42m-Vi-vjl" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3l-gU-ymt" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="N8k-UM-pbd"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="XVU-0a-3Xs"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="6OL-vQ-ufG"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="CKI-a0-nSM"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="i0p-3X-hdM"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfu-7v-IKZ" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BS7-As-uS0" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="B6F-Ol-0DK"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="BG0-eC-veP"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="0Cd-7Z-Mkb"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="bzG-Xz-4Z0"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="uY3-hl-NNy"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re5-0M-kpK">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uO8-Qc-RvK">
                                                         <rect key="frame" x="0.0" y="256" width="512" height="64"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIF-ar-w9Y" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ej4-Tw-fnh" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="IAB-lJ-0zf"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="yEW-Rw-evA"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="85V-bk-ZNZ"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="HNb-1d-WaW"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="ZDC-eg-sOp"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njt-N8-GGK" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANg-5t-Cem" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="Bk2-b3-5VJ"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="fpq-fA-gzW"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="cBz-GM-Hxq"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="xUv-Gs-j8l"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="zdJ-cv-tpT"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxJ-f1-QG7" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iXC-zH-LtI" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="1aJ-Ll-ptP"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="hSw-0o-nQs"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="I8L-Ib-f63"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="zpw-0o-wuc"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="5yv-jL-Diy"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cEZ-53-NS6" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caT-9W-nma" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="56w-3I-jYv"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="qG4-lc-Mus"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="7Z6-LU-VIY"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="HrJ-E2-oi2"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="19O-Hd-uMB"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-D7-t0g" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJZ-IV-V5T" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="UnI-Lv-UjG"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="tp7-WG-zYW"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="cKp-48-Gt9"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="uLR-Ng-aVx"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="GcH-rF-diz"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7H9-ib-vLY" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3y-fR-yFQ" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="c15-kx-gUI"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="e3t-Ab-EWh"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="40m-Nc-MFL"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="7bo-iP-JQ4"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Imy-Ga-5Cb"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBI-Kg-18k" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-2e-JiO" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="78q-Yj-ts0"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="pQH-PK-tPf"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="e5k-0G-WaH"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="rLZ-uQ-pSq"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="X28-4h-WEn"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHt-io-Q2e" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DlG-ub-Qy8" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="OpU-iM-i0u"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="Xxe-me-XbQ"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="NA7-lq-Cwr"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="swB-5Y-M50"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="5l0-T8-8uN"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzA-7i-lIG">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMT-CT-B33">
                                                         <rect key="frame" x="0.0" y="320" width="512" height="64"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uiU-2x-UyI" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCi-bx-uXN" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="knV-EY-ZjJ"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="xuy-2W-G2P"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="0ho-YR-0JU"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="YHM-ga-gpr"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="fyj-aq-BXr"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hY-JL-eNP" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="945-f6-KJU" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="ZcZ-BP-eJD"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="sOe-sH-QQQ"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="NC4-YN-xJ1"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="l2c-0K-qRa"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="zOj-Is-6ID"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HE2-Dn-tnz" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNa-bm-kw9" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="XNE-yM-hOz"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="hyu-b7-5s8"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="d0B-Pk-w2F"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="ndI-wI-fQI"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="efl-9t-INM"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72O-vy-aH3" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPH-8g-j81" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="AX1-q9-NJK"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="Xg0-hu-awn"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="hKX-4b-dXo"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="mlX-i9-FhW"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="V2H-OD-W0D"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nY5-ho-f42" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJk-hK-RK1" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="PPU-oI-kOQ"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="mde-bg-TBU"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="6Tg-LY-GOd"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="sUu-Bm-iHc"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="9oP-ev-5cX"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bJ-PQ-wiE" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ba-wA-ry9" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="3TV-pP-5NO"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="Lg6-W6-cey"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="C1G-OR-gRQ"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="DHn-lH-i2p"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="kS9-Ya-7fc"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBw-Rw-NZD" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uk7-MO-qaB" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="XVw-oO-qAm"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="abs-Sg-euP"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="Hf6-rR-2rd"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="nB2-Ix-AkP"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="8yT-Si-fFC"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhK-NO-YSd" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfe-GL-oNq" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="2lj-fU-rqA"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="MIW-ee-SNm"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="5Hj-Em-tpK"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="9vu-Wo-r6o"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="u5b-1L-ENe"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWs-2W-VEj">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaI-po-URf">
                                                         <rect key="frame" x="0.0" y="384" width="512" height="64"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frB-K2-22H" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esF-Cq-GIM" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="SOV-ck-ZIv"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="f4e-iT-CUL"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="1aO-2R-CuI"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="GLT-Ur-7G7"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="5xo-9n-iHC"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-En-cuI" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7XZ-0o-s7y" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="iIP-66-RKc"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="sys-n1-xUC"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="gIf-zb-reu"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="tNu-b1-F4k"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="yCt-kc-V26"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myZ-gh-gk3" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="825-Yf-8LW" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="Cr1-RX-c9m"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="Lko-gd-XVm"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="Hc5-Lb-ltd"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="h5I-Jz-fob"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="NYK-Gl-hH5"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrK-kT-3GH" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYb-Fu-0W6" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="Wbc-WJ-8NM"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="i3F-OF-yNY"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="KyL-d5-6Zg"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="ftu-Ql-aNa"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Ooq-mj-z7d"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T91-nP-AS8" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-0b-0Zc" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="CqO-14-hne"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="jmg-Bs-Tan"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="DQf-wZ-YvR"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="Rfx-tx-VKZ"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="JAH-eu-OHr"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-GF-KCg" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQq-qp-7lv" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="5bw-6y-WMs"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="JC9-rx-EnD"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="0qe-d6-L4j"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="57o-cc-5Y1"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="78w-xH-hVd"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yJ-hJ-TrA" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8j-Gn-Ct5" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="Dfg-1k-tmN"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="fpc-uD-54J"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="01y-xv-l4q"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="4fN-9c-Rf6"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="pqG-X9-uSh"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSb-9Y-EOA" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnf-Y4-Awj" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="FcA-CM-coS"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="IjV-Go-D5a"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="S0f-h0-w8e"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="l0a-5t-M80"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="sCG-Ac-MNh"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hU4-Yu-kRg">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3X-fV-E5c">
                                                         <rect key="frame" x="0.0" y="448" width="512" height="64"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0f-sH-taa" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrs-fy-Wcc" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="67H-Mw-v8W"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="zTp-Hx-SeY"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="8Ss-Da-p1J"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="F5O-bM-8WR"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="ae7-hz-mA5"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnZ-UA-MT1" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHP-fj-1WH" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="CP6-Ev-Lbp"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="VYV-nQ-FFC"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="23f-m0-Pwa"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="Gxu-yi-997"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="VGI-aU-TZY"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axO-VS-8MC" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bm-at-aY2" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="OuU-PL-aKl"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="Yar-3B-4Dy"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="6AH-8F-lLz"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="Qbv-O8-2OU"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="ZvL-bn-teW"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deQ-PO-ZE5" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="coW-hT-u4f" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="192" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="YLf-iD-vl7"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="ywe-Zy-iJv"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="III-sK-UVE"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="npB-I9-YrZ"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Qbm-wg-Tau"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VN4-bq-HF7" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L21-j3-cvY" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="256" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="64" id="Gvu-28-TxF"/>
-                                                                    <constraint firstAttribute="height" constant="64" id="cdN-zf-gCI"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="mP2-ra-lXC"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="nME-rW-beZ"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="E8x-T4-eP2"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4S9-4g-wlu" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wj9-e9-dUE" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="320" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="mEm-4V-iTQ"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="wQG-Xu-dc3"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="7Dx-If-jKQ"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="mRb-DK-1hw"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="lGt-IF-iY6"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tr9-p4-9v2" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-98-oWv" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="384" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="EON-Gp-faG"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="Ffp-Oi-v1J"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="Oob-nk-VWd"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="pa6-mb-nzv"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="Ktc-2o-bdm"/>
+                                                                </connections>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0n-IZ-M9s" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MB5-I8-eTU" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="448" y="0.0" width="64" height="64"/>
                                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="64" id="JHf-Bt-ZFQ"/>
-                                                                    <constraint firstAttribute="width" constant="64" id="xC9-sL-bO7"/>
+                                                                    <constraint firstAttribute="height" constant="64" id="Az5-qu-9Ln"/>
+                                                                    <constraint firstAttribute="width" constant="64" id="CPV-If-bfD"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="RZh-5j-4a7"/>
+                                                                </connections>
                                                             </view>
                                                         </subviews>
                                                     </stackView>

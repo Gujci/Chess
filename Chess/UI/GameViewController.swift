@@ -63,9 +63,9 @@ class GameViewController: UIViewController {
         }
     }
     var onGoingGame: Game! {
-        didSet{
-            layout()
+        didSet {
             stopTimer()
+            layout()
         }
     }
     
