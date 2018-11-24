@@ -22,6 +22,25 @@ extension Position.Col {
         case .h: return 7
         }
     }
+    
+    init?(from index: Int) {
+        switch index {
+        case 0: self = .a
+        case 1: self = .b
+        case 2: self = .c
+        case 3: self = .d
+        case 4: self = .e
+        case 5: self = .f
+        case 6: self = .g
+        case 7: self = .h
+        default: return nil
+        }
+    }
+}
+
+extension Position {
+    
+    init(col: Int, row: Int) { self.init(col: Position.Col(from: col), row: row) }
 }
 
 extension Position {
@@ -31,10 +50,6 @@ extension Position {
 
 class GameViewController: UIViewController {
     
-    var onGoingGame: Game!
-    
-    var tiles: [[GameTileView]]!
-    
     @IBOutlet weak var board: UIStackView! {
         didSet {
             tiles = board.arrangedSubviews.compactMap { view in
@@ -42,6 +57,20 @@ class GameViewController: UIViewController {
             }
         }
     }
+    var tiles: [[GameTileView]]! {
+        didSet{
+            setTilePositions()
+        }
+    }
+    var onGoingGame: Game! {
+        didSet{
+            layout()
+            stopTimer()
+        }
+    }
+    
+    private var selectedFigure: Figure?
+    private var updateTimer: Timer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,10 +84,50 @@ class GameViewController: UIViewController {
         layout()
     }
     
+    private func setTilePositions() {
+        tiles.enumerated().forEach { (rowNum, row) in
+            row.enumerated().forEach({ (colNum, tile) in
+                tile.position = Position(col: colNum, row: rowNum)
+            })
+        }
+    }
+    
     private func layout() {
-        onGoingGame.steps?.forEach { step in
+        guard onGoingGame != nil, tiles != nil else { return }
+        tiles.reduce([], +).forEach { $0.figure = nil }
+        onGoingGame.latestSteps.forEach { step in
             guard let indices = step.position?.indices else { return }
             tiles[indices.row][indices.col].figure = step.figure
+        }
+    }
+    
+    private func startTimer() {
+        updateTimer = Timer(timeInterval: 1000, repeats: true) { [weak self] _ in self?.reloadGame() }
+    }
+    
+    private func stopTimer() {
+        updateTimer?.invalidate()
+        updateTimer = nil
+    }
+    
+    private func reloadGame() {
+        onGoingGame.update { [weak self] updated in self?.onGoingGame = updated }
+    }
+    
+    @IBAction func tilePressed(_ sender: GameTileView) {
+        guard let figure = selectedFigure else {
+            selectedFigure = sender.figure
+            return
+        }
+        guard figure != sender.figure else {
+            selectedFigure = nil
+            return
+        }
+        let next = Step(position: sender.position, figure: figure)
+        onGoingGame.add(step: next) { [weak self] isSuccess in
+            guard isSuccess else { return }
+            self?.onGoingGame.steps?.append(next)
+            self?.startTimer()
         }
     }
 }

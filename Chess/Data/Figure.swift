@@ -32,3 +32,5 @@ public struct Figure: Codable {
 extension Figure: ValidJSONData { }
 
 extension Figure: JSONCodable { }
+
+extension Figure: Equatable { }

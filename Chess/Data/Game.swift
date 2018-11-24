@@ -41,6 +41,31 @@ extension Game: JSONCodable { }
 
 public extension Game {
     
+    func add(step: Step, _ done: @escaping (Bool) -> ()) {
+        Server.shared.post("/games/\(_id.uuidString)/steps", data: step) { (status, _:JSON?) in
+            switch status {
+            case .created:
+                done(true)
+            default:
+                done(false)
+            }
+        }
+    }
+    
+    func update(_ done: @escaping (Game?) -> ()) {
+        Server.shared.get("/games/\(_id.uuidString)") { (_, game: Game?) in done(game) }
+    }
+}
+
+public extension Game {
+    
+    var latestSteps: [Step] {
+        return steps?.filter { _ in return true } ?? []
+    }
+}
+
+public extension Game {
+    
     public static var allRelated: [Game] = []
 }
     

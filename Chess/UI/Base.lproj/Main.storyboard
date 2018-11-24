@@ -100,6 +100,9 @@
                                                                     <constraint firstAttribute="height" constant="64" id="F2x-pm-lq3"/>
                                                                     <constraint firstAttribute="width" constant="64" id="pzd-2L-0Ds"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="DBm-SZ-azv"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6G8-S0-miE" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="64" y="0.0" width="64" height="64"/>
@@ -108,6 +111,9 @@
                                                                     <constraint firstAttribute="height" constant="64" id="THe-gI-t2R"/>
                                                                     <constraint firstAttribute="width" constant="64" id="X7p-cr-Dfa"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <action selector="tilePressed:" destination="RXA-lb-E7B" eventType="valueChanged" id="NVd-zu-rmO"/>
+                                                                </connections>
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6XG-cL-ONz" customClass="GameTileView" customModule="Chess" customModuleProvider="target">
                                                                 <rect key="frame" x="128" y="0.0" width="64" height="64"/>

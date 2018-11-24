@@ -30,13 +30,10 @@ extension Figure {
 }
 
 @IBDesignable
-class GameTileView: UIView {
-    
-    enum State {
-        case selected
-    }
+class GameTileView: UIControl {
     
     var figure: Figure?
+    var position: Position?
     
     lazy var imageView: UIImageView = {
         return UIImageView(frame: bounds)
@@ -48,4 +45,6 @@ class GameTileView: UIView {
         imageView.image = figure?.image
         if imageView.superview == nil { addSubview(imageView) }
     }
+    
+    override func endTracking(_ touch: UITouch?, with event: UIEvent?) { sendActions(for: .valueChanged) }
 }
