@@ -15,3 +15,12 @@ public enum Side: String, Codable {
 extension Side: ValidJSONData { }
 
 extension Side: JSONCodable { }
+
+extension Side: Equatable { }
+
+prefix func !(_ rhs: Side) -> Side {
+    switch rhs {
+    case .dark: return .light
+    case .light: return .dark
+    }
+}

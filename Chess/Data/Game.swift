@@ -13,14 +13,16 @@ public struct Game: Codable {
     public var owner: User?
     public var ownerSide: Side?
     public var guest: User?
+    public var nextSide: Side?
     public var steps: [Step]?
     public var status: GameStatus?
     
-    public init(_id: UUID, owner: User?, ownerSide: Side?, guest: User?, steps: [Step]?, status: GameStatus?) { 
+    public init(_id: UUID, owner: User?, ownerSide: Side?, guest: User?, nextSide: Side?, steps: [Step]?, status: GameStatus?) {
         self._id = _id
         self.owner = owner
         self.ownerSide = ownerSide
         self.guest = guest
+        self.nextSide = nextSide
         self.steps = steps
         self.status = status
     }
@@ -29,6 +31,7 @@ public struct Game: Codable {
         case _id = "id"
         case owner
         case ownerSide
+        case nextSide
         case guest
         case steps
         case status
@@ -52,15 +55,13 @@ public extension Game {
         }
     }
     
+    mutating func replace(step: Step, for figure: Figure) {
+        guard let stepIndex = steps?.index(where: { step in step.figure == figure }) else { return }
+        steps?[stepIndex] = step
+    }
+    
     func update(_ done: @escaping (Game?) -> ()) {
         Server.shared.get("/games/\(_id.uuidString)") { (_, game: Game?) in done(game) }
-    }
-}
-
-public extension Game {
-    
-    var latestSteps: [Step] {
-        return steps?.filter { _ in return true } ?? []
     }
 }
 

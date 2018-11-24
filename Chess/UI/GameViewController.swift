@@ -68,15 +68,10 @@ class GameViewController: UIViewController {
             layout()
         }
     }
-    
-    private var selectedPosition: Position? {
+    private var selectedTile: GameTileView? {
         didSet {
-            if let removeGlowPosition = oldValue {
-                tile(at: removeGlowPosition)?.isSelected = false
-            }
-            if let setGlowPosition = selectedPosition {
-                tile(at: setGlowPosition)?.isSelected = true
-            }
+            if let removeGlowTile = oldValue { removeGlowTile.isSelected = false }
+            if let setGlowTile = selectedTile { setGlowTile.isSelected = true }
         }
     }
     private var updateTimer: Timer?
@@ -91,6 +86,7 @@ class GameViewController: UIViewController {
         super.viewWillAppear(animated)
         
         layout()
+        if !(User.current?.isNext(in: onGoingGame) ?? false) { startTimer() }
     }
     
     private func setTilePositions() {
@@ -109,11 +105,11 @@ class GameViewController: UIViewController {
     private func layout() {
         guard onGoingGame != nil, tiles != nil else { return }
         tiles.reduce([], +).forEach { $0.figure = nil }
-        onGoingGame.latestSteps.forEach { step in tile(at: step.position)?.figure = step.figure }
+        onGoingGame.steps?.forEach { step in tile(at: step.position)?.figure = step.figure }
     }
     
     private func startTimer() {
-        updateTimer = Timer(timeInterval: 1000, repeats: true) { [weak self] _ in self?.reloadGame() }
+        updateTimer = Timer(timeInterval: 10, repeats: true) { [weak self] _ in self?.reloadGame() }
     }
     
     private func stopTimer() {
@@ -126,20 +122,21 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func tilePressed(_ sender: GameTileView) {
-        guard let position = selectedPosition else {
-            selectedPosition = sender.position
-            return
+        guard User.current?.isNext(in: onGoingGame) ?? false else { return }
+        if let figure = sender.figure, User.current?.owns(figure: figure, in: onGoingGame) ?? false {
+            selectedTile = sender
         }
-        guard position != sender.position else {
-            selectedPosition = nil
-            return
-        }
-        let next = Step(position: position, figure: sender.figure)
-        onGoingGame.add(step: next) { [weak self] isSuccess in
-            guard isSuccess else { return }
-            self?.selectedPosition = nil
-            self?.onGoingGame.steps?.append(next)
-            self?.startTimer()
+        else {
+            guard let position = sender.position, let figure = selectedTile?.figure else { return }
+            let next = Step(position: position, figure: figure)
+            onGoingGame.add(step: next) { [weak self] isSuccess in
+                guard isSuccess else { return }
+                DispatchQueue.main.async {
+                    self?.selectedTile = nil
+                    self?.onGoingGame.replace(step: next, for: figure)
+                    self?.startTimer()
+                }
+            }
         }
     }
 }

@@ -32,7 +32,10 @@ class UserListTableViewController: UITableViewController {
         guard let invitee = User.others[safe: indexPath.row] else { return }
         guard let invite = User.current?.invite(invitee) else { return } // TODO: side
         Game.create(game: invite) { [weak self] isSuccess in
-            guard isSuccess else { return }
+            guard isSuccess else {
+                DispatchQueue.main.async { self?.tableView.deselectRow(at: indexPath, animated: true) }
+                return
+            }
             DispatchQueue.main.async { self?.performSegue(withIdentifier: "backToGames", sender: self) }
         }
     }

@@ -62,7 +62,19 @@ public extension User {
 
 public extension User {
     
+    func isNext(in game: Game) -> Bool {
+        guard let ownerSide = game.ownerSide else { return false }
+        let userSide = game.owner == self ? ownerSide : !ownerSide
+        return userSide == game.nextSide
+    }
+    
+    func owns(figure: Figure, in game: Game) -> Bool {
+        guard let ownerSide = game.ownerSide else { return false }
+        let userSide = game.owner == self ? ownerSide : !ownerSide
+        return figure.side == userSide
+    }
+    
     func invite(_ other: User, as side: Side = .light) -> Game {
-        return Game(_id: UUID(), owner: self, ownerSide: side, guest: other, steps: Step.initials, status: .pending)
+        return Game(_id: UUID(), owner: self, ownerSide: side, guest: other, nextSide: .light, steps: Step.initials, status: .pending)
     }
 }
