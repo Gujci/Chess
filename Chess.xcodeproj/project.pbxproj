@@ -29,6 +29,7 @@
 		21BEC8F021A96A570085F8DA /* ReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8EF21A96A570085F8DA /* ReplaceSegue.swift */; };
 		21BEC8F221A96AA30085F8DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8F121A96AA30085F8DA /* LoginViewController.swift */; };
 		21BEC8F421A97E3D0085F8DA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8F321A97E3D0085F8DA /* Utils.swift */; };
+		21BEC8F721A992860085F8DA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BEC8F621A992860085F8DA /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		21BEC8EF21A96A570085F8DA /* ReplaceSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaceSegue.swift; sourceTree = "<group>"; };
 		21BEC8F121A96AA30085F8DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		21BEC8F321A97E3D0085F8DA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		21BEC8F621A992860085F8DA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				21BEC8F121A96AA30085F8DA /* LoginViewController.swift */,
 				21BEC8EB21A9616B0085F8DA /* GameListTableViewController.swift */,
 				21BEC8ED21A968160085F8DA /* UserListTableViewController.swift */,
+				21BEC8F621A992860085F8DA /* GameViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				2134E9B22197323B0066C23D /* Game.swift in Sources */,
 				2134E9B72197323B0066C23D /* Position.swift in Sources */,
 				2134E9CE21975C6C0066C23D /* Server.swift in Sources */,
+				21BEC8F721A992860085F8DA /* GameViewController.swift in Sources */,
 				21BEC8F021A96A570085F8DA /* ReplaceSegue.swift in Sources */,
 				2134E98B219731FA0066C23D /* AppDelegate.swift in Sources */,
 				21BEC8EE21A968160085F8DA /* UserListTableViewController.swift in Sources */,

@@ -10,7 +10,10 @@ import UIKit
 
 extension Game {
     
-    var titleText: String { return "Game with ..." }
+    func titleText(for user: User?) -> String? {
+        guard let othersName = user?._id == owner?._id ? guest?.name : owner?.name else { return nil }
+        return "Game with \(othersName)"
+    }
     
     var subTitleText: String { return status?.rawValue ?? "" }
 }
@@ -25,14 +28,13 @@ class GameListTableViewController: UITableViewController {
     
     private func reload() {
         guard let current = User.current else {
-            performSegue(withIdentifier: "current", sender: self)
+            performSegue(withIdentifier: "logout", sender: self)
             return
         }
         Game.getRelated(to: current) { [weak self] _ in DispatchQueue.main.async { self?.tableView.reloadData() }}
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return Game.allRelated.count }
@@ -41,19 +43,20 @@ class GameListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "gameCell", for: indexPath)
         guard let game = Game.allRelated[safe: indexPath.row] else { return cell }
         
-        cell.textLabel?.text = game.titleText
+        cell.textLabel?.text = game.titleText(for: User.current)
         cell.detailTextLabel?.text = game.subTitleText
 
         return cell
     }
  
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO: - pass game
+        guard let gameVC = segue.destination as? GameViewController else { return }
+        guard let selectionIndex = tableView.indexPathForSelectedRow?.row else { return }
+        guard let selectedGame = Game.allRelated[safe: selectionIndex] else { return }
+        gameVC.onGoingGame = selectedGame
     }
     
     // MARK: - Actions
-    
     @IBAction func unwindToGames(_ segue: UIStoryboardSegue) { reload() }
 }
