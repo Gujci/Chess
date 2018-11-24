@@ -69,7 +69,16 @@ class GameViewController: UIViewController {
         }
     }
     
-    private var selectedFigure: Figure?
+    private var selectedPosition: Position? {
+        didSet {
+            if let removeGlowPosition = oldValue {
+                tile(at: removeGlowPosition)?.isSelected = false
+            }
+            if let setGlowPosition = selectedPosition {
+                tile(at: setGlowPosition)?.isSelected = true
+            }
+        }
+    }
     private var updateTimer: Timer?
 
     override func viewDidLoad() {
@@ -92,13 +101,15 @@ class GameViewController: UIViewController {
         }
     }
     
+    private func tile(at position: Position?) -> GameTileView? {
+        guard let indices = position?.indices else { return nil }
+        return tiles[indices.row][indices.col]
+    }
+    
     private func layout() {
         guard onGoingGame != nil, tiles != nil else { return }
         tiles.reduce([], +).forEach { $0.figure = nil }
-        onGoingGame.latestSteps.forEach { step in
-            guard let indices = step.position?.indices else { return }
-            tiles[indices.row][indices.col].figure = step.figure
-        }
+        onGoingGame.latestSteps.forEach { step in tile(at: step.position)?.figure = step.figure }
     }
     
     private func startTimer() {
@@ -115,17 +126,18 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func tilePressed(_ sender: GameTileView) {
-        guard let figure = selectedFigure else {
-            selectedFigure = sender.figure
+        guard let position = selectedPosition else {
+            selectedPosition = sender.position
             return
         }
-        guard figure != sender.figure else {
-            selectedFigure = nil
+        guard position != sender.position else {
+            selectedPosition = nil
             return
         }
-        let next = Step(position: sender.position, figure: figure)
+        let next = Step(position: position, figure: sender.figure)
         onGoingGame.add(step: next) { [weak self] isSuccess in
             guard isSuccess else { return }
+            self?.selectedPosition = nil
             self?.onGoingGame.steps?.append(next)
             self?.startTimer()
         }

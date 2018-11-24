@@ -32,3 +32,5 @@ public struct Position: Codable {
 extension Position: ValidJSONData { }
 
 extension Position: JSONCodable { }
+
+extension Position: Equatable { }

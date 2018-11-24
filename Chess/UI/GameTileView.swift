@@ -44,5 +44,11 @@ class GameTileView: UIControl {
         if imageView.superview == nil { addSubview(imageView) }
     }
     
+    override var isSelected: Bool {
+        didSet {
+            imageView.backgroundColor = isSelected ? .orange : .clear
+        }
+    }
+    
     override func endTracking(_ touch: UITouch?, with event: UIEvent?) { sendActions(for: .valueChanged) }
 }
