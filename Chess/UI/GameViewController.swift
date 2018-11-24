@@ -8,11 +8,40 @@
 
 import UIKit
 
+extension Position.Col {
+    
+    var index: Int {
+        switch self {
+        case .a: return 0
+        case .b: return 1
+        case .c: return 2
+        case .d: return 3
+        case .e: return 4
+        case .f: return 5
+        case .g: return 6
+        case .h: return 7
+        }
+    }
+}
+
+extension Position {
+    
+    var indices: (row: Int, col: Int) { return (row: row!, col: col!.index) }
+}
+
 class GameViewController: UIViewController {
     
     var onGoingGame: Game!
     
-    @IBOutlet var tiles: [GameTileView]!
+    var tiles: [[GameTileView]]!
+    
+    @IBOutlet weak var board: UIStackView! {
+        didSet {
+            tiles = board.arrangedSubviews.compactMap { view in
+                (view as? UIStackView)?.arrangedSubviews.compactMap { view in view as? GameTileView }
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +56,9 @@ class GameViewController: UIViewController {
     }
     
     private func layout() {
-        // TODO: - evaluate steps
+        onGoingGame.steps?.forEach { step in
+            guard let indices = step.position?.indices else { return }
+            tiles[indices.row][indices.col].figure = step.figure
+        }
     }
 }

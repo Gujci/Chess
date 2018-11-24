@@ -39,7 +39,7 @@ class GameTileView: UIView {
     var figure: Figure?
     
     lazy var imageView: UIImageView = {
-        return UIImageView(frame: frame)
+        return UIImageView(frame: bounds)
     }()
     
     override func draw(_ rect: CGRect) {
