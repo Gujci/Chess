@@ -42,6 +42,9 @@ extension Game: JSONCodable { }
 public extension Game {
     
     public static var allRelated: [Game] = []
+}
+    
+public extension Game {
     
     public static func getRelated(to user: User,_ done: @escaping ([Game]?) -> ()) {
         Server.shared.get("/games", query: ["participant": user._id.uuidString]) { (status, games: [Game]?) in

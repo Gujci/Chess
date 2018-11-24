@@ -20,16 +20,16 @@ class UserListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return User.all.count }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return User.others.count }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
-        cell.textLabel?.text = User.all[safe: indexPath.row]?.name
+        cell.textLabel?.text = User.others[safe: indexPath.row]?.name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let invitee = User.all[safe: indexPath.row] else { return }
+        guard let invitee = User.others[safe: indexPath.row] else { return }
         guard let invite = User.current?.invite(invitee) else { return } // TODO: side
         Game.create(game: invite) { [weak self] isSuccess in
             guard isSuccess else { return }

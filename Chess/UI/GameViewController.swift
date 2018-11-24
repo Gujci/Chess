@@ -11,6 +11,8 @@ import UIKit
 class GameViewController: UIViewController {
     
     var onGoingGame: Game!
+    
+    @IBOutlet var tiles: [UIButton]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,6 @@ class GameViewController: UIViewController {
     }
     
     private func layout() {
-        // TODO
+        // TODO: - evaluate steps
     }
 }

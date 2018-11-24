@@ -29,11 +29,16 @@ extension User: ValidJSONData { }
 
 extension User: JSONCodable { }
 
+extension User: Equatable { }
+
 public extension User {
     
     public static var current: User?
     
     public static var all: [User] = []
+}
+    
+public extension User {
     
     public static func create(user: User, _ done: @escaping (Bool) -> ()) {
         Server.shared.put("/users/\(user._id.uuidString)", data: user) { (status, _: JSON?) in
@@ -49,6 +54,11 @@ public extension User {
             done(users)
         }
     }
+}
+
+public extension User {
+    
+    public static var others: [User] { return all.filter { $0 != current } }
 }
 
 public extension User {

@@ -11,7 +11,7 @@ import UIKit
 extension Game {
     
     func titleText(for user: User?) -> String? {
-        guard let othersName = user?._id == owner?._id ? guest?.name : owner?.name else { return nil }
+        guard let othersName = user == owner ? guest?.name : owner?.name else { return nil }
         return "Game with \(othersName)"
     }
     
