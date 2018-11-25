@@ -64,6 +64,7 @@ class GameViewController: UIViewController {
     }
     var onGoingGame: Game! {
         didSet {
+            guard onGoingGame != oldValue else { return }
             stopTimer()
             layout()
         }
@@ -89,6 +90,13 @@ class GameViewController: UIViewController {
         if !(User.current?.isNext(in: onGoingGame) ?? false) { startTimer() }
     }
     
+    override func didMove(toParent parent: UIViewController?) {
+        super.didMove(toParent: parent)
+        
+        guard parent == nil else { return }
+        stopTimer()
+    }
+    
     private func setTilePositions() {
         tiles.enumerated().forEach { (rowNum, row) in
             row.enumerated().forEach({ (colNum, tile) in
@@ -109,7 +117,7 @@ class GameViewController: UIViewController {
     }
     
     private func startTimer() {
-        updateTimer = Timer(timeInterval: 10, repeats: true) { [weak self] _ in self?.reloadGame() }
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { [weak self] _ in self?.reloadGame() }
     }
     
     private func stopTimer() {

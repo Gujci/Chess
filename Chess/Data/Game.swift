@@ -42,6 +42,8 @@ extension Game: ValidJSONData { }
 
 extension Game: JSONCodable { }
 
+extension Game: Equatable { }
+
 public extension Game {
     
     func add(step: Step, _ done: @escaping (Bool) -> ()) {

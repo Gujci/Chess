@@ -22,6 +22,8 @@ extension Step: ValidJSONData { }
 
 extension Step: JSONCodable { }
 
+extension Step: Equatable { }
+
 extension Step {
     
     static var initials: [Step] {

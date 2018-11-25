@@ -16,3 +16,5 @@ public enum GameStatus: String, Codable {
 extension GameStatus: ValidJSONData { }
 
 extension GameStatus: JSONCodable { }
+
+extension GameStatus: Equatable { }
