@@ -65,7 +65,6 @@ class GameViewController: UIViewController {
     var onGoingGame: Game! {
         didSet {
             guard onGoingGame != oldValue else { return }
-            stopTimer()
             layout()
         }
     }
@@ -117,7 +116,7 @@ class GameViewController: UIViewController {
     }
     
     private func startTimer() {
-        updateTimer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { [weak self] _ in self?.reloadGame() }
+        updateTimer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { [weak self] _ in self?.reloadGame() }
     }
     
     private func stopTimer() {
@@ -126,7 +125,7 @@ class GameViewController: UIViewController {
     }
     
     private func reloadGame() {
-        onGoingGame.update { [weak self] updated in self?.onGoingGame = updated }
+        onGoingGame.update { [weak self] updated in DispatchQueue.main.async { self?.onGoingGame = updated } }
     }
     
     @IBAction func tilePressed(_ sender: GameTileView) {

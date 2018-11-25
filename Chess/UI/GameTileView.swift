@@ -32,7 +32,11 @@ extension Figure {
 @IBDesignable
 class GameTileView: UIControl {
     
-    var figure: Figure?
+    var figure: Figure? {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
     var position: Position?
     
     lazy var imageView: UIImageView = { UIImageView(frame: bounds) }()
